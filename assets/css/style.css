@@ -15,7 +15,6 @@ hr {
 
 /*sections*/
 .section {
-  font-family: 'Krona One', sans-serif;
   color: #222;
   text-align: center;
   position: relative;
@@ -97,4 +96,5 @@ h1 {
 #infoMenu li {
   display: inline-block;
   position: relative;
+  color: #222;
 }
