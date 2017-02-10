@@ -1,15 +1,29 @@
 /*logo*/
-img {
-  width: 60%;
+#logo {
+  width: 50%;
+}
+
+/*card deck*/
+.card-deck {
+  display:inline;
+}
+
+/*line divider*/
+hr {
+  width: 50%;
 }
 
 /*sections*/
 .section {
-  font-size: 6em;
   font-family: 'Krona One', sans-serif;
   color: #222;
   text-align: center;
   position: relative;
+}
+
+/*titles*/
+h1 {
+  font-family: 'Krona One', sans-serif;
 }
 
 /*nav*/
