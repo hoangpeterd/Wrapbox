@@ -3,6 +3,16 @@
   width: 50%;
 }
 
+/*row of the plans*/
+div.row {
+  margin-bottom: 30px;
+}
+
+/*titles of the plans*/
+h3 {
+  margin-top: 40px;
+}
+
 /*card deck*/
 .card-deck {
   display:inline;
@@ -11,13 +21,14 @@
 /*line divider*/
 hr {
   width: 50%;
+  margin-bottom: 30px;
 }
 
 /*sections*/
 .section {
   color: #222;
   text-align: center;
-  position: relative;
+  /*position: relative;*/
 }
 
 /*titles*/
