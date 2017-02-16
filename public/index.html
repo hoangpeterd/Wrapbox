@@ -15,8 +15,9 @@
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
   <!-- link to krona-one font -->
   <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+  <!-- font awesome icons -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-
 <body>
 
   <!-- navigation -->
@@ -25,7 +26,7 @@
       <li data-menuanchor="page2"><a href="#page2">HOW IT WORKS</a></li>
       <li data-menuanchor="page3"><a href="#page3">THE PLANS</a></li>
       <li data-menuanchor="page4"><a href="#page4">SUBSCRIBE</a></li>
-      <li><button type="button" class="btn btn-secondary">SIGN IN</button></li>
+      <li><button type="button" id="modalSignIn" class="btn btn-secondary">SIGN IN</button></li>
   </ul>
 
   <!-- fullPage -->
@@ -94,6 +95,80 @@
     </div>
     <!-- end forth section -->
   </div>
+
+  <!-- sign in modal -->
+	<div class="modal fade" id="signInModal" role="dialog">
+		<div class="modal-dialog modal-sm" align="center">
+				<div class="modal-content">
+					 <div class="modal-header">
+							<h4 class="modal-title"><img src="images/wrapboxIcon.png" alt="wrapbox icon" height="30px" width="30px"> sign in</h4>
+					</div>
+					<div class="modal-body">
+						<form action="" id="loginForm">
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-user"></i></span>
+								<input id="userName" class="form-control" type="text" name='username' placeholder="username"/>
+							</div>
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+								<input id="password" class="form-control" type="password" name='password' placeholder="password"/>
+							</div>
+							<!-- <div class="checkbox">
+								<label>
+									<input type="checkbox"> i agree to the <a href="#">terms and conditions</a>
+								</label>
+							</div> -->
+							<div class="form-group">
+								<button type="button" class="btn btn-primary btn-block" id="submitSignIn">login</button>
+							</div>
+							<!-- <div class="form-group text-center">
+								<a href="#">forgot password</a>&nbsp;|&nbsp;<a href="#">support</a>
+							</div> -->
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button id="modalSignUp" type="button" class="btn btn-secondary btn-block" data-dismiss="modal">sign up</button>
+					</div>
+				</div>
+		</div>
+	</div>
+	<!-- end sign in modal -->
+
+	<!-- sign up modal -->
+	<div class="modal fade" id="signUpModal" role="dialog">
+		<div class="modal-dialog modal-sm" align="center">
+				<div class="modal-content">
+					 <div class="modal-header">
+							<h4 class="modal-title"><img src="images/wrapboxIcon.png" alt="wrapbox icon" height="30px" width="30px"> sign up</h4>
+					</div>
+					<div class="modal-body">
+						<form action="" id="loginForm">
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-user"></i></span>
+								<input id="createUser" class="form-control" type="text" name='username' placeholder="username"/>
+							</div>
+							<div class="form-group input-group">
+								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+								<input id="createPassword" class="form-control" type="password" name='password' placeholder="password"/>
+							</div>
+							<div class="form-group">
+							<!-- <div class="checkbox">
+								<label>
+									<input type="checkbox"> i agree to the <a href="#">terms and conditions</a>
+								</label>
+							</div> -->
+							<!-- <div class="form-group text-center">
+								<a href="#">forgot password</a>&nbsp;|&nbsp;<a href="#">support</a>
+							</div> -->
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button id="createBtn" type="button" class="btn btn-primary btn-block" data-dismiss="modal">submit</button>
+					</div>
+				</div>
+		</div>
+	</div>
+	<!-- end sign up modal -->
 
   <!-- footer -->
   <div id="infoMenu">
