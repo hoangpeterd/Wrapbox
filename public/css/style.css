@@ -3,6 +3,10 @@
   width: 50%;
 }
 
+#signIn {
+  float: right;
+}
+
 /*row of the plans*/
 div.row {
   margin-bottom: 30px;
