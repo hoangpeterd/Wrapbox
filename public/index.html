@@ -112,7 +112,7 @@
 							<h4 class="modal-title"><img src="images/wrapboxIcon.png" alt="wrapbox icon" height="30px" width="30px"> sign in</h4>
 					 </div>
 					 <div class="modal-body">
-						<form action="" id="loginForm">
+						<form action="/signin" id="loginForm" method="POST">
 							<div class="form-group input-group">
 								<span class="input-group-addon"><i class="fa fa-user"></i></span>
 								<input id="userEmail" class="form-control" type="text" name='email' placeholder="email"/>
@@ -127,7 +127,7 @@
 								</label>
 							</div> -->
 							<div class="form-group">
-								<button type="button" class="btn btn-primary btn-block" id="submitSignIn">login</button>
+								<button type="submit" class="btn btn-primary btn-block" id="submitSignIn">login</button>
 							</div>
 							<!-- <div class="form-group text-center">
 								<a href="#">forgot password</a>&nbsp;|&nbsp;<a href="#">support</a>
@@ -150,7 +150,7 @@
 							<h4 class="modal-title"><img src="images/wrapboxIcon.png" alt="wrapbox icon" height="30px" width="30px"> sign up</h4>
 					</div>
 					<div class="modal-body">
-						<form action="" id="loginForm">
+						<form action="/signin" id="loginForm">
 							<div class="form-group input-group">
 								<span class="input-group-addon"><i class="fa fa-user"></i></span>
 								<input id="createUserEmail" class="form-control" type="text" name='email' placeholder="email"/>

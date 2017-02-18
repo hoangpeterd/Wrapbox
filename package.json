@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/hoangpeterd/Wrapbox#readme",
   "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.16.1",
     "express": "^4.14.1",
-    "path": "^0.12.7"
+    "mysql": "^2.13.0",
+    "path": "^0.12.7",
+    "sequelize": "^3.30.2",
+    "stripe": "^4.15.0"
   }
 }
